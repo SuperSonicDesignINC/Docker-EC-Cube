@@ -44,6 +44,7 @@
 /www/.vscode/
 *.php~
 /www/.env
+/www/package-lock.json
 /www/.maintenance
 
 ###> symfony/phpunit-bridge ###
