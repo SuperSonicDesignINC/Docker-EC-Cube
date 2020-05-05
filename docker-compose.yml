@@ -1,0 +1,41 @@
+version: "3.1"
+services:
+    www:
+        build: .
+        ports: 
+            - "8095:80"
+        volumes:
+            - ./www:/var/www/html/
+            - ./php/conf:/usr/local/etc/php/conf.d
+        links:
+            - db
+        networks:
+            - default
+    db:
+        image: mysql:8.0
+        ports: 
+            - "9906:3306"
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_DATABASE: eccubedata
+            MYSQL_USER: usercube
+            MYSQL_PASSWORD: testcube
+            MYSQL_ROOT_PASSWORD: testroot
+        volumes:
+            - ./dump:/docker-entrypoint-initdb.d
+            - ./mysql/conf:/etc/mysql/conf.d
+            - eccube:/var/lib/mysql
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links: 
+            - db:db
+        ports:
+            - 8092:80
+        environment:
+            MYSQL_USER: usercube
+            MYSQL_PASSWORD: testcube
+            MYSQL_ROOT_PASSWORD: testroot
+volumes:
+    eccube:

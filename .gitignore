@@ -1,0 +1,61 @@
+!dummy
+!/www/.gitmodule
+/www/composer.phar
+/www/gulpconfig.js
+/www/vendor/
+/www/node_modules/
+/www/var/*
+!/www/var/.gitkeep
+/www/app/cache/*
+!/www/app/cache/.gitkeep
+/www/app/log/*
+!/www/app/log/.gitkeep
+/www/app/Plugin/*
+!/www/app/Plugin/.gitkeep
+!/www/app/Plugin/ExamplePlugin
+/www/app/PluginData/*
+!/www/app/PluginData/.gitkeep
+/www/app/template/*
+!/www/app/template/admin
+!/www/app/template/default
+!/www/app/template/user_data
+/www/app/proxy/entity/*
+!/www/app/proxy/entity/.gitkeep
+/www/html/plugin/*
+!/www/html/plugin/.gitkeep
+/www/html/install/temp/*
+/www/html/upload/save_image/*
+!/www/html/upload/save_image/.gitkeep
+/www/html/upload/temp_image/*
+!/www/html/upload/temp_image/.gitkeep
+/www/html/upload/temp_plugin/*
+/www/html/template/*
+!/www/html/template/admin
+!/www/html/template/default
+!/www/html/template/install
+/www/html/user_data/*
+!/www/html/user_data/assets/css/customize.css
+!/www/html/user_data/assets/js/customize.js
+!/www/html/user_data/.gitkeep
+/www/src/Eccube/Resource/config/*.dist.php
+/www/tests/tmp/*
+/www/reports/*
+/www/.idea
+/www/.vscode/
+*.php~
+/www/.env
+/www/.maintenance
+
+###> symfony/phpunit-bridge ###
+/www/.phpunit
+/www/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> friendsofphp/php-cs-fixer ###
+/www/.php_cs
+/www/.php_cs.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> symfony/web-server-bundle ###
+/www/.web-server-pid
+###< symfony/web-server-bundle ###
