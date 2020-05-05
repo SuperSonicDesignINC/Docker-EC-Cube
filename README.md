@@ -22,7 +22,7 @@ You can manage your database via phpmyadmin
 
 ![alt text](https://github.com/SuperSonicDesignINC/Docker-EC-Cube/blob/master/blobs/screenshots/01_phpmyadmin_login.jpg "PhpMyAdmin Login")
 
-![alt text](https://github.com/SuperSonicDesignINC/Docker-EC-Cube/blob/master/blobs/screenshots/01_phpmyadmin_database "PhpMyAdmin Database")
+![alt text](https://github.com/SuperSonicDesignINC/Docker-EC-Cube/blob/master/blobs/screenshots/01_phpmyadmin_database.jpg "PhpMyAdmin Database")
 
 You can use root and the mysql root password assigned on docker-compose.yml or mysql user / mysql password assigned on yml file.
 
