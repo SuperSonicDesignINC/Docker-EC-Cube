@@ -46,6 +46,7 @@
 /www/.env
 /www/package-lock.json
 /www/.maintenance
+/www/symfony.lock
 
 ###> symfony/phpunit-bridge ###
 /www/.phpunit
